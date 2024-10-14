@@ -1,0 +1,801 @@
+.nav{
+    height: 10vh;
+    display: flex;
+    border-top: 2px solid #8bc34a;
+    border-bottom: 2px solid #8bc34a;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    
+
+}
+.carousel {
+    display: flex;
+    gap: 4vh;
+    align-items: center;
+    width: 100%;
+}
+.profil{
+    justify-content: center;
+    display: flex;
+    margin-left:10vh;
+}
+
+.soltaraf{
+    width: 85vh;
+   
+}
+.hakkımızda{
+    padding-right: 5vh;
+    text-decoration: none;
+    color: black;
+    font-size:17px;
+    
+}
+.sirket{
+      
+    text-decoration: none;  
+    color: black;
+    font-size:17px;
+
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 20vh;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 1.7vh 2.2vh;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.yemekicon{
+    color: white;
+    padding-right: 3vh;
+    font-size:3vh;
+    margin-left:3.5vh;
+}
+.onayicon{
+    color: white;
+    font-size:3vh;
+    padding-right: 3vh;
+    margin-left:3.5vh;
+}
+.talepicon{
+    color: white;
+    padding-right: 3vh;
+    font-size:3vh;
+    margin-left:3.5vh;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.bilgilendirme {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    border-top-left-radius: 2vh;
+    border-bottom-right-radius: 2vh;
+    width: 90%;
+    padding: 3vh;
+    text-align: center;
+    margin-top: 3vh;
+}
+
+.bilgilendirmebaslik {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.bilgilendirmeicerik {
+    text-align: left;
+    font-size: 12px;
+    color: black;
+    margin: 1.5vh;
+}
+
+.bilgilendirmeicerik p {
+    color: black;
+}
+
+.pagination-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 3vh;
+}
+
+.dot {
+    height: 1.5vh;
+    width: 1.5vh;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+.footer {
+    background-color: #f1f1f1; 
+    padding: 1.5vh 0;
+    border-top: 2px solid #8bc34a; 
+    
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 14px; 
+    color: #333; 
+    
+    margin-top:6vh;
+} 
+
+.footer-content {
+    color:black;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    max-width: 150vh;
+    margin: 0 auto;
+    padding: 0 3vh;
+}
+
+.dot.active {
+    background-color: #2381FC;
+}
+.dogumcontainer {
+            
+           
+    background-color: white;
+    margin-top: 3vh;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-top-left-radius: 2vh;
+    border-bottom-right-radius: 2vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+body{
+    margin: 0px;
+    font-family: sans-serif;
+   
+    justify-content: center;
+    background-color: whitesmoke;
+}
+.profile-card {
+    border-style: solid;
+    border-color: #E6E6E6;
+    width: 18.5vh;
+    border-width: 0.5px;
+    border-radius: 15px;
+    padding: 1.5vh;
+    text-align: center;
+    margin-bottom:4vh;
+}
+.profile-card img {
+    width: 11vh;
+    height: 11vh;
+    border-radius: 14vh;
+}
+.carousel button {
+    border: none;
+    background-color: transparent;
+    font-size: 24px;
+    cursor: pointer;
+}
+.carousel button:disabled {
+    color: lightgray;
+    cursor: default;
+}
+.dogumnextbutton{
+    background-color: white !important;
+    color: #757575;
+    border-color: #E6E6E6 !important;
+    border-style: solid !important;
+    transform: translateX(-70%);
+    border-radius: 3vh;
+   
+}
+.dogumprevbutton{
+    background-color: white !important;
+    color: #757575;
+    border-color: #E6E6E6 !important;
+    border-style: solid !important;
+    transform: translateX(70%);
+    border-radius: 3vh;
+   
+}
+.duyuruhaberdiv{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    margin-top: 1.5vh; 
+    border-top-left-radius: 2vh; 
+    border-bottom-right-radius: 2vh;
+    width: 100%;
+    height: 82.5vh;
+}
+
+
+.duyuruhaberbaslikicerik button {
+    background: none;
+    border: none;
+    font-size: large;
+    cursor: pointer;
+    font-weight: normal;
+    color: lightgray;
+    margin: 0 10px;
+}
+.duyuruhaberbaslikicerik button.active {
+    font-weight: bold;
+    color: black;
+    
+}
+.duyuruhaberbaslik{
+    display: flex; 
+    justify-content: center; 
+    
+    
+}
+.duyuruhaberbaslikicerik{
+    display: flex; 
+    gap: 5.5vh;
+    margin-top:3vh;
+    margin-bottom:3vh;
+}
+.duyuruhaberanaicerik{
+    margin-left: 3vh;
+    margin-right: 3vh; 
+    margin-top: -1.5vh;
+}
+.line{
+    border-top: 1px solid #dedddd;
+}
+.duyuruhabertarih{
+    color: greenyellow;  
+    font-weight: 550;
+    font-size: x-small;
+}
+.duyuruhabericerikbaslik{
+    text-decoration:none;
+    color: rgb(55, 109, 215);
+}
+.duyuruhabertext{
+    font-size: x-small; 
+    font-weight: 550;
+    color: #757575;
+}
+.tumduyurular{
+    color: black; 
+    font-size: small; 
+    font-weight: 800; 
+    
+}
+#calendar {
+    background-color: #fff;
+    padding: 3vh;
+    border-radius: 1.5vh;
+    height: 42.5vh;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5vh;
+}
+
+.header button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5vh;
+}
+
+th, td {
+    width: 14.28%;
+    padding: 1.5vh;
+    text-align: center;
+    font-size:small;
+    
+    
+}
+td{
+    font-weight: 550;
+}
+th{
+    color: #8BC34A;
+    font-weight:400 ;
+    
+}
+
+
+
+
+
+.legend {
+    display: flex;
+    justify-content: center;
+    gap: 2vh;
+    height: 7vh;
+    margin-left: 2vh;
+    width: auto;
+}
+.aksajpg{
+    width: 20vh;
+    height: 6vh;
+    display: flex; 
+    margin-top: 1.5vh;
+}
+.kisijpg{
+    width: 7vh;
+    height: 7vh;
+    border-radius: 14vh;
+    justify-content: center;
+   
+}
+.navicerik{
+    display: flex;
+    
+    width: 95%;
+    height: 100%;
+    justify-content: space-around;
+}
+.profil{
+ display: flex;
+ justify-content: center;
+ align-items: center    ;
+}
+.hosgeldin{
+   
+    display: flex;
+    padding-top: 2.8vh;
+    width: 100%;
+
+}
+.owlbox{
+    display: flex;
+    flex-direction: column;
+    gap:3.5vh;
+    width: 20vh;
+    height: 8.5vh;  
+    cursor: pointer;  
+    border-style: none;
+}
+.sliderall{
+    height: 45.5vh;
+    width:84vh;
+}
+.slidertext{
+    font-weight: 500;
+    font-size:small;
+    margin-top: 0.7vh;
+}
+.anaicerik{
+    display: flex;
+    
+    flex-direction: column;
+  
+    
+    width: 100%;
+    height: auto;
+    
+    
+}
+.sagtaraf{
+    margin-left: 3vh;
+    padding-top: 0.1vh;
+    
+    width:56.9vh;
+}
+.slider{
+    width:100%;
+    max-width: 100vw;
+    height: 78vh;
+    padding-top: 1.5vh;
+    position:relative;
+    border-top-left-radius: 3vh;
+    border-bottom-right-radius: 3vh;
+    overflow: hidden;
+}
+.onaytext{
+    color:white;
+    font-weight:bold;
+    font-size:15px;
+    padding-right: 7vh;
+}
+.Onaydiv{
+    background-color:rgb(12, 102, 191);
+    width: 100% ;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    border-top-left-radius: 1.5vh;
+    border-bottom-right-radius: 1.5vh;
+    align-items: center;
+    margin-top: 7vh;
+    border-style: none;
+    cursor: pointer;
+    justify-content: left;
+    
+    
+    
+}
+.Yemekdiv{
+    background-color:rgb(12, 102, 191);
+    width:100%;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    border-top-left-radius: 1.5vh;
+    border-bottom-right-radius: 1.5vh;
+    align-items: center;
+    margin-top: 2vh;
+    border-style: none;
+    cursor: pointer;
+    justify-content: left;
+   
+}
+.Talepdiv{
+    background-color:rgb(12, 102, 191);
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content: left;
+    border-top-left-radius: 1.5vh;
+    border-bottom-right-radius: 1.5vh;
+    align-items: center;
+    margin-top: 2vh;
+    border-style: none;
+    cursor: pointer;
+   
+}
+.taleptext{
+    color:white;
+    padding-right: 5vh;
+    font-weight:bold;
+    font-size:15px;
+}
+.yemektext{
+    color:white;
+    padding-right: 6vh;
+    font-weight:bold;
+    font-size:15px;
+}
+.owlicon{
+    height: 0.7vh;
+    width: 3vh;
+}
+.list{
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width:100%;
+    display: flex;
+    width: max-content;
+    transition: 1s;
+}
+.owlslider{
+    width: 100%; 
+    
+     
+}
+.img{
+    width:100%;
+}
+.list img{
+    width:100%;
+    max-width: 100vw ;
+    height: 42vh;
+    object-fit: cover;
+    border-top-left-radius: 2vh;
+    border-bottom-right-radius: 2vh;
+   
+}
+.total{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+   
+    
+    
+}
+
+
+.dots{
+    position: absolute;
+    bottom: 36.5vh;
+    color:#fff;
+    left:0;
+    width: 100%;
+    margin:0;
+    padding: 0;
+    display: flex;
+    justify-content:center ;
+
+}
+.dots li{
+    list-style: none;
+    width: 1.5vh;
+    height: 1.5vh;
+    background-color: #fff;
+    margin:3vh;
+    border-radius: 3vh;
+    transition: 1s;
+}
+.dots li.active{
+    width: 30px;
+}
+.kimnerede{
+    display: flex; 
+    flex-direction: column; 
+    background-color: white; 
+    align-items: center;
+    width: 60vh;
+    height: 50vh;
+    border-top-left-radius: 2vh;
+    border-bottom-right-radius: 2vh;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.gelecegimaksa{
+    display: flex; 
+    flex-direction: column; 
+    background-color: white; 
+    align-items: center;
+    width: 60vh;
+    height: 50vh;
+    border-top-left-radius: 2vh;
+    border-bottom-right-radius: 2vh;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.lorem{
+    text-align: center;
+    
+    padding-left: 4vh;
+    padding-right: 4vh;
+}
+.baslik{
+    font-size:27px;
+}
+.incelediv{
+    background-color: #8BC34A; 
+    margin-top: 5.6vh;
+    width: 17vh;
+    height: 5.6vh;
+    border-radius: 3.5vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.inceletext{
+    text-decoration: none; color: white
+}
+.icon{
+    font-size: 80px;
+    margin-top: 4vh;
+    color: rgb(72, 111, 211);
+}
+.miradadiv{
+    margin-top:3vh;
+    display: flex;
+    position: relative;
+    
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    text-align: center;
+    border-top-left-radius: 2vh;
+    border-bottom-right-radius: 2vh;
+   
+}
+.miradaimg{
+    width: 100%;
+    height: 20vh;
+    border-top-left-radius: 2vh;
+    position: relative; 
+    display: inline-block;
+}
+.miradaicerik{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+.anlasmaall{
+    display: flex;
+    justify-content: center;
+}
+.kampanya{
+     
+    color: white;
+    background-color: black;
+    border-radius: 2vh; 
+    margin-left: 0.7vh;
+    width: 24vh;
+    margin-bottom: 4vh;
+    height: 3.5vh; 
+    justify-content: center;
+    align-items: center; 
+    display: flex;
+}
+.kampanyadiv{
+    position: absolute;
+    
+    
+}
+.miradatext{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+.miradabutton{
+    background-color: white;
+    color: gray; 
+    font-weight: bold;
+    font-size:large;
+    border-radius: 3vh; 
+    cursor: pointer;
+    border:none;
+    box-shadow: 0 2px 5px rgba(1, 1, 1, 0.2);
+    width:3.8vh;
+    height:3.5vh;
+    
+    
+    
+}
+.anlasmadiv{
+    background-color: #8BC34A;
+    width: 31.2vh;
+    border-radius: 2vh;
+    height: 3.5vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3vh;
+    
+}
+.anlasmatext{
+    color: white;
+    text-decoration: none;
+    
+}
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5vh;
+    color: white;
+    height: 8.5vh;
+    font-size: 2.5vh;
+    border-top-left-radius: 2vh;
+    border-bottom-right-radius: 2vh;
+}
+.item-green { background: #8BC34A; }
+.item-orange { background: #FF9800; }
+.item-blue { background:  rgb(12, 102, 191); }
+.item-purple { background: #781f87; }
+.item-yellow { background: yellow; }
+.owl-nav button {
+    position: absolute;
+    top: 5vh;
+    color:blue !important;
+    transform: translateY(-90%);
+    background: #fff;
+    border: none;
+   
+    width: 3.5vh;
+    height: 3.5vh;
+    border-radius: 3vh !important;
+    background-color: #fff !important;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.owl-nav button.owl-prev {
+    left: -2.5vh;
+}
+.owl-nav button.owl-next {
+    right: -2.2vh;
+}
+.owl-nav button:focus {
+    outline: none;
+}
+.owl-nav button span {
+    font-size: 20px;
+}
+.card{
+    gap:29px; display: flex;
+}
+@media only screen and (max-width: 1200px) {
+   
+
+  
+}
+
+@media only screen and (max-width: 576px) {
+
+    body {
+        display:flex;
+        flex-direction: column;
+        height: 100%;
+        width: 150%;
+        
+    }
+    .duyuruhaberdiv{
+        height:700px;
+    }
+    .bilgilendirme{
+        margin-top:20px;
+    }
+    .card{
+        display:flex;
+        flex-direction:column;     
+    }
+    .owlslider{
+        width: 200px;
+        margin-left:100px;
+    }
+    .owl-dots{
+        margin-right: 50px;
+    }
+   
+    .owl-item.active{
+        width: 20px;
+    }
+    .kimnerede{
+        width: 350px;
+    }
+    .gelecegimaksa{
+        width: 350px;
+    }
+    .miradadiv{
+        width: 350px;
+    }
+    .dogumcontainer{
+        width: 350px;
+    }
+ 
+ 
+    .nav{
+        width: 180%;
+    }
+    .container{
+        margin-left: 350px;
+    }
+   .carousel{
+    width:200%;
+   }
+   .soltaraf{
+    width: 150%;
+   }
+   .sagtaraf{
+    margin-left: 100px;
+   }
+   .bilgilendirme{
+    width: 300px;
+   }
+   .footer{
+    
+   }
+ 
+ 
+
+}

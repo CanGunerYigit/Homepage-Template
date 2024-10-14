@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+    <nav class="nav">
+        <div class="navicerik" >
+            <img class="aksajpg" src="img/aksa.png" alt="">
+            <div class="profil" >
+             <div>
+                <i class="fa-solid fa-user-group"></i>
+                <a class="hakkımızda" href="" >Hakkımızda</a>
+             </div>
+             <div class="dropdown">
+                <i class="fa-solid fa-briefcase"></i>
+                <a class="sirket" href="#">Grup Şirketleri </a>
+                <i class="fa-solid fa-chevron-down"></i>
+                <div class="dropdown-content">
+                    <a href="">Şirket </a>
+                    <hr class="line">
+                    <a href="">Şirket </a>
+                    <hr class="line">
+                    <a href="">Şirket </a>
+                </div>
+            </div>
+                <div class="profil">
+                    <img class="kisijpg" src="img/kisi.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </nav>
+<div class="container" >
+    <div class="total" >
+        <div class="soltaraf" >
+            <div class="anaicerik" >
+                <div class="hosgeldin" >
+                    <span style="padding-left: 1vh; margin-bottom: 1.5vh;">Hoş Geldin, <strong>Betül</strong></span>
+                </div>
+                <div class="sliderall">
+                    <div class="slider">
+                        <div class="list" >
+                            <div class="img" >
+                                <img style="width: 84vh;"  src="img/haber1.jpg" alt="">
+                            </div>
+                            <div class="img">
+                                <img style="width: 84vh;" src="img/haber1.jpg" alt="">
+                            </div>
+                            <div class="img" >
+                                <img style="width: 84vh;" src="img/haber1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div  class="buttons">
+                            <button id="prev"><</button>
+                            <button id="next">></button>
+                        </div>
+                        <ul class="dots">
+                            <li class="active "></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel owl-theme owlslider" >
+                <button class="item item-green owlbox">
+                    <i class="fa-regular fa-user owlicon"></i>
+                    <span class="slidertext">Hümanist</span> 
+                </button>
+                <button class="item item-orange owlbox">
+                    <i class="fa-solid fa-graduation-cap owlicon"></i>
+                    <span class="slidertext">PİK Online</span>
+                </button>
+                <button class="item item-blue owlbox ">
+                    <i class="fa-solid fa-id-card owlicon "></i>
+                    <span class="slidertext">AYM</span> 
+                </button>
+                <button class="item item-purple owlbox ">
+                    <i class="fa-solid fa-graduation-cap owlicon"></i>
+                    <span class="slidertext">Akademi</span>
+                </button>
+                <button class="item item-yellow owlbox ">
+                    <span >...</span>
+                </button>
+            </div>
+            <div class="card" >
+                <div class="kimnerede" >
+                    <i class="fa-solid fa-location-dot icon"></i>
+                    <h2 class="baslik">Kim Nerede?</h2>
+                    <span class="lorem">Lorem ipsum is simply dummy text of the printing and typesetting industry.</span>
+                    <div class="incelediv" >
+                        <a class="inceletext"  href="">İncele</a>
+                    </div>
+                </div>
+                <div class="gelecegimaksa" >
+                    <i class="fa-solid fa-flag-checkered icon"></i>
+                    <h2 class="baslik">Geleceğim Aksa</h2>
+                    <span class="lorem">Lorem ipsum is simply dummy text of the printing and typesetting industry.</span>
+                    <div class="incelediv" >
+                        <a class="inceletext"  href="">İncele</a>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="miradadiv">
+                <img class="miradaimg"  id="miradaImage" src="img/mirada.jpg" alt="">
+                <div class="kampanyadiv"><a class="kampanya" >Kampanya Detayları</a></div>
+                
+                <div class="miradatext" >
+                    
+                    <button class="miradabutton" onclick="prevHeading()"><</button>
+
+                    
+                    <div class="miradaicerik">
+                        <h2 id="heading">Mirada Otellerinde <br> Aksa'lılara Özel İndirimler!</h2>
+                    </div>
+
+                    <button class="miradabutton" onclick="nextHeading()">></button>
+                    
+
+                </div>  
+             <div class="anlasmaall">
+                <div class="anlasmadiv"><a class="anlasmatext" href="">Tüm Anlaşmalı Kurumlar</a> </div>
+             </div>
+              
+            </div>
+            <div class="dogumcontainer">
+                <h2>Bugün Doğanlar</h2>
+                <div class="carousel"  >
+
+                    <button class="dogumprevbutton" id="prevButton"  onclick="prevProfiles()"><</button>
+                    <div id="profilesContainer" style="display: flex; gap: 0.3vh;"></div>
+                    <button class="dogumnextbutton" id="nextButton" onclick="nextProfiles()">></button>
+                </div>
+            </div>
+            
+        </div>
+        <div class="sagtaraf">
+            <button class="Onaydiv">
+                <i class="fa-regular fa-file onayicon"></i>
+                <span class="onaytext">Bekleyen Onaylarım</span>
+            </button>
+            <button class="Yemekdiv">
+                <i class="fa-solid fa-utensils yemekicon"></i>
+                <span class="yemektext">Haftalık Yemek Seçimi</span>
+            </button>
+            <button class="Talepdiv">
+                <i class="fa-solid fa-boxes-stacked talepicon"></i>
+                <span class="taleptext">Talep & Uygulamalar</span>
+            </button>
+        <div class="duyuruhaberdiv" >
+            <div class="duyuruhaberbaslik" >
+              <div class="duyuruhaberbaslikicerik">
+                <button style="font-weight:900;font-size:larger;" id="duyurubtn" class="active" onclick="showSection('duyurular')">Duyurular</button>
+                <button style="font-weight: 900; font-size:larger;" id="haberbtn" onclick="showSection('haberler')">Haberler</button> 
+              </div>
+            </div>
+            <div id="duyurular" class="duyuruhaberanaicerik" >
+             <hr class="line" />
+             <span class="duyuruhabertarih" >06 Haziran 2024</span>
+             <h4 ><a class="duyuruhabericerikbaslik"  href="">Aksa'lılara Özel Konser<br> Biletlerinde İndirim</h4></a> 
+             <span class="duyuruhabertext">Sayın Yöneticilerimiz ve Değerli Çalışma <br>Arkadaşlarımız, Grubumuzun Jeneratör İşkolu Aksa Fabrika...</span>
+             <hr class="line"/>
+             <span class="duyuruhabertarih">06 Haziran 2024</span>
+             <h4 ><a class="duyuruhabericerikbaslik" href="">İdari İşler Memnuniyet<br> Anketi Yayında</h4></a> 
+             <span class="duyuruhabertext" >Sayın Yöneticilerimiz ve Değerli Çalışma Arkadaşlarımız, Aksa<br> Gümüşhane Bayburt Doğal Gaz Dağıtım A.Ş. Bayburt...</span>
+             <hr class="line"/>
+             <span class="duyuruhabertarih">06 Haziran 2024</span>
+             <h4 ><a class="duyuruhabericerikbaslik" href="">Excel Eğitimlerimiz Çok Yakında<br> Başlıyor</h4></a> 
+             <span class="duyuruhabertext"> Aksa'nın enerji üretimindeki büyüklüğünü, yatırımlarına sürekli <br> olarak devam etmesini, enerjinin her alanında olmasını ve...</span>
+             <hr class="line"/>
+             <a class="tumduyurular" href="">Tüm Duyurular</a>
+            </div>
+            <div id="haberler" class="duyuruhaberanaicerik" style="display: none;">
+                <hr class="line" />
+                <span class="duyuruhabertarih">Tarih</span>
+                <h4><a class="duyuruhabericerikbaslik" href="">Boş</a></h4>
+                <span class="duyuruhabertext">Boş...</span>
+                <hr class="line"/>
+                <span class="duyuruhabertarih">Tarih</span>
+                <h4><a class="duyuruhabericerikbaslik" href="">Boş</a></h4>
+                <span class="duyuruhabertext">Boş...</span>
+                <hr class="line"/>
+                <h4><a class="duyuruhabericerikbaslik" href="">Boş</a></h4>
+                <span class="duyuruhabertext">Boş...</span>
+                <hr class="line"/>
+                <h4><a class="duyuruhabericerikbaslik" href="">Boş</a></h4>
+                <span class="duyuruhabertext">Boş...</span>
+                <hr class="line"/>
+                <a class="tumduyurular" href="">Tüm Haberler</a>
+            </div>
+
+            </div>
+           <div class="takvim" style="box-shadow: 0 0.3vh 0.7vh rgba(0, 0, 0, 0.2); background-color: white; border-top-left-radius:2vh; border-bottom-right-radius: 2vh; margin-top: 3vh; width: 100%;">
+            <div style="display: flex; justify-content: center; align-items: center;flex-direction: column; ">
+              <div style="justify-content: center; align-items: center; display: flex; flex-direction: column; ">
+                <h4 >2024 Şirket Takvimi</h4>
+                <hr class="line" style="width:40vh;">   
+                <div id="calendar">
+                    <div class="header">
+                        <button style="font-weight: 550;" id="prevMonth"><</button>
+                        <span style="font-weight: 550;" id="monthYear"></span>
+                        <button style="font-weight: 550;" id="nextMonth">></button>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>S</th>
+                                <th>M</th>
+                                <th>T</th>
+                                <th>W</th>
+                                <th>T</th>
+                                <th>F</th>
+                                <th>S</th>
+                            </tr>
+                        </thead>
+                        <tbody id="calendarBody"></tbody>
+                    </table>
+                    <div class="legend">
+                     <div style="display: flex; align-items: center;">
+                        <div style="background-color: #8BC34A; width: 2vh; height: 2vh; margin-right: 0.5vh;border-top-left-radius: 0.7vh; border-bottom-right-radius: 0.7vh;"></div>
+                        <span style=" font-size: smaller; font-weight: 500;" >Resmi Tatil</span>
+                     </div>
+                     <div style="display: flex; align-items: center;">
+                        <div style="background-color: #3b77e7; width: 2vh; height: 2vh;margin-right: 0.5vh;  border-top-left-radius: 0.7vh; border-bottom-right-radius: 0.7vh;"></div>
+                        <span style=" font-size: smaller; font-weight: 500;" >Şirket Tatili  (Kavacık Merkez)</span>
+                     </div>   
+                    </div>
+               
+              </div>
+            </div>
+            
+        </div>
+        
+        </div>
+        <div class="bilgilendirme">
+            <h2 class="bilgilendirmebaslik">Duyuru / Bilgilendirme</h2>
+            <hr class="line"/>
+            <div class="bilgilendirmeicerik">
+              <div class="slide">
+                <h3>Acınızı Paylaşıyoruz</h3>
+                <p>Kazancı Holding İnsan Kaynakları Başkan Yardımcısı olarak görev yapan Sayın Yeşim Ağaçkesen’in babası, 24.06.2024 tarihinde vefat etmiştir.</p>
+                <p>Sayın Yeşim Ağaçkesen ve ailesine başsağlığı diliyoruz.</p>
+                <p>Cenaze Tören Tarih & Saati: 25.06.2024 / Öğle namazına müteakiben</p>
+                <p>Cenaze Yeri: Levent Afet Yolu Camii - Zincirlikuyu Mezarlığı</p>
+                <p>Cenaze törenine katılım için 12:15’te merkez bina önünden servis kalkacaktır.</p>
+              </div>
+              <div class="slide" style="display:none;">
+                <h3>Boş</h3>
+                <p>Boş.</p>
+            </div>
+            <div class="slide" style="display:none;">
+                <h3>Boş</h3>
+                <p>Boş.</p>
+            </div>
+            </div>
+            <div class="pagination-dots">
+                <span class="dot active" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+        </div>
+       
+    </div>
+   
+</div>
+<footer  class="footer">
+    <div class="footer-content">
+        <span>AKSA Bilişim Teknolojileri © 2024</span>
+        <span>Kazancı Holding</span>
+    </div>
+</footer>
+</div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+   
+    <script src="script.js"></script>
+    
+</body>
+</html>
